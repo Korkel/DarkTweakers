@@ -1,0 +1,1275 @@
+/**************
+   A few width items
+   using @media query
+**************/
+@media only screen and (min-width: 1200px) {
+    #contentArea {
+        width: 70% !important;
+    }
+    #menu { 
+        width: 70% !important;
+    }
+}
+
+/*** Fix abbr tags on mobile ***/
+abbr[title]:after {
+    content: " (" attr(title) ")";
+}
+@media screen and (min-width: 1025px) {
+    abbr[title]
+    {
+        cursor:help;
+    }
+
+    abbr[title]:after
+    {
+        content: "";
+    }
+}
+
+
+/*******
+ General
+ ********/
+/** Screw #layout and #contentArea height, give #html the same background colour */
+html, body {
+    background: #0E0E0E !important;
+    color: #F0F0F0 !important;
+}
+
+/***************
+** New header **
+***************/
+#top {
+    border: none !important;
+}
+
+/* Henk it! */
+#logo a {
+    height: 45px !important;
+    width: 150px !important;
+    background: url(https://tweakers.net/ext/f/5zAVOaOnkptw91F4uzckWMPh/full.png) no-repeat 20px -1px !important;
+}
+/* Peek-a-boo Henk */
+#logo a:hover {
+    height: 45px !important;
+    width: 150px !important;
+    background: url(https://tweakers.net/ext/f/5zAVOaOnkptw91F4uzckWMPh/full.png) no-repeat 20px -20px !important;
+}
+
+/* Remove the useless minibar with #slogan and #socialcount */
+#menubottombar {
+    display: none;
+}
+/* Default gray bar holding the search form and true logo
+    Do not use display: none, search will disappear */
+#searchbar {
+    height: 0px !important;
+    z-index: 111 !important;
+}
+/* Search form */
+#search {
+    position: fixed !important;
+    top: -5px;
+    left: 1050px;
+    width: 400px;
+}
+#search .keywordSearch {
+    width: 300px;
+    border: 1px solid #323333;
+}
+#search input.text {
+    background: #232222 !important;
+}
+#search .options, #search .options .dropdown ul {
+    background: #323333 !important;
+}
+#search .fancySelect span {
+    color: #EDEEEE !important;
+}
+
+/* User menu */
+ul#userbar.loggedin li.more.last span.username {
+    background-size: contain !important;
+    padding-left: 45px !important;
+    background-image: url('https://ic.tweakimg.net/usericons/125506/link-8bit-xmas.png') !important;
+    background-position: left !important;
+}
+
+ul.profileNavigation, ul.profileNavigation li.indent {
+    background-color: #212323;
+    color: #EDEEEE !important;
+}
+ul.profileNavigation li a {
+    color: #EDEEEE !important;
+}
+.dropdown li a, #menu .dropdown ul a {
+    color: #FFFFFF !important;
+}
+div#menubar div#menu ul#userbar.loggedin li.more.last.dropdown, ul.profileNavigation li.indent a {
+    background-color: #212323;
+    color: #e6e6e6 !important;
+}
+#menu .dropdown li.indent:hover {
+    background-color: #813 !important;
+    color: #000000;
+}
+
+/* Kill that useless compare icon */
+#userbar li.compare {
+    display: none;
+}
+
+/** Menu */
+.unread .newNotificationsCount {
+    color: #000000 !important;
+}
+#menu li a {
+    color: #C8CBCB !important;
+}
+#menu li.active a {
+    color: #D9FF26 !important;
+}
+#menu .dropdown > span, .dropdown li, .dropdown li a, #menu .dropdown ul a {
+    color: #000000 !important;
+}
+
+/** Notifications */
+.notificationsPopup .header h3 {
+    color: #000000 !important;
+}
+div.popup {
+    background: #323131 !important;
+}
+.scrollableList .listItem:hover {
+    background: #323434 !important;
+}
+.menuHeaderPopup .notification.unread:hover {
+    background: #454444 !important;
+}
+.menuHeaderPopup .notification.unread {
+    background: #414040 !important;
+}
+#webPushContainer {
+    display: none;
+}
+
+/*******************
+** End new header **
+*******************/
+
+/** Overall background */
+#layout {
+    background: #0E0E0E !important;
+    padding-top: 5px !important;
+    height: 100% !important;
+}
+
+/** Give the actual content a different background colour */
+#contentArea {
+    background: #323434 !important;
+    padding: 5px 5px 10px 5px !important;
+/*  padding-bottom: 25px !important;*/
+    position: relative !important;
+/*  margin: 0px 5px !important; */
+}
+
+/* Global .bar style */
+.bar {
+    background-color: #323333;
+    color: #EDEEEE;
+}
+
+/* Gallery */
+.galleryHeadingContainer>div {
+    border-top: none !important;
+}
+.galleryHeadingContainer, .pageTabsContainer {
+    background-color: #212323 !important;
+}
+div.galleryBody h3.bar {
+    background: #212323 !important;
+}
+.galleryTable.karma td {
+    background: #323434 !important;
+}
+ul.galleryProfile li.checked {
+    color: #EDEEEE !important;
+}
+
+/** Unsorted meuk */
+h3, h3 a {
+    color: #FFFFFF !important;
+}
+
+/* No background for user icons */
+.thumb {
+    background: none !important;
+}
+
+/** Bottom */
+#bottom div.hr {
+    background: #202020 !important;
+}
+
+/** Text boxes (search, reply) */
+textarea#messageBox, input {
+    color: #FFFFFF;
+    background: #1E1E1E;
+}
+
+/** Tracker */
+#tracker .trackeritem li a { 
+    color: #B7B4B2 !important;
+}
+#tracker .trackeritem li .new, #tracker .trackeritem li a:hover, #tracker .trackeritem li a:hover .time { 
+    color: #d9ff26 !important;
+}
+#tracker .trackeritem h4, #tracker .trackeritem h4 a { 
+    color: #D7D6D4 !important;
+}
+#tracker {
+    padding-top: 0px !important;
+    top: 45px !important;
+}
+.fakeTop {
+    display: none;
+}
+
+/* Background color of tabs */
+.pageTabs li {
+    background: #212323 !important;
+}
+.pageTabs li.active {
+    background: #323434 !important;
+}
+
+/* Hyperlinks */
+a {
+    color: #EDEEEE !important;
+}
+a:visited {
+    color: #878888 !important;
+}
+
+/* New DM/PM message */
+form.insertMessage {
+    background: inherit;
+}
+
+/* Badges */
+.labelCard, ul.topKarma.show {
+    background: #000000 !important;
+}
+.karmaPopup ol li.highlight {
+    color: #FFFFFF;
+}
+
+/* Fix anchor location due to fixed header */
+/* More likely in GoT */
+a[name] {
+    display: block;
+    padding-top: 45px;
+    margin-top: -45px;
+}
+
+/*******
+   FP
+ *******/
+/** Main content */
+/* Tabs */
+#fp_tabs li a {
+    color: #ABAAAA !important;
+}
+#fp_tabs li.active a {
+    color: #FFFFFF !important;
+}
+
+/* Whitepapers */
+.itknowledgebasewrapper {
+    background: #212323 !important;
+}
+
+/** Tile items */
+.fpaItem>a {
+    background: rgba(0,0,0,0.8);
+}
+.fpaTitle h2 {
+    color: #b9133d !important;
+}
+
+/** Article Listing */
+table.highlights td a {
+    color: #EDEEEE !important;
+}
+table.highlights td a:visited {
+    color: #888888 !important;
+}
+
+table.highlights {
+    border-top: 1px solid #000 !important;
+}
+table.highlights td {
+    border-bottom: 1px solid #000 !important;
+}
+table.highlights .publicationTime span.new {
+    color: #A9CC0B !important;
+}
+table.article {
+    background: inherit !important;
+}
+/* More items popup */
+.moreItems .popupContent {
+    background: #2E2F2F !important;
+}
+
+/* Link to Replies on frontpage */
+td.replies a.commentCount:visited {
+    color: inherit;
+}
+
+/** Second Column - PW, Jobs, Newsletter, etc. */
+#pricewatch, #jobs, #poll, .pollWrapper, #newsletter, #textlink, #social .twitterButton, #social .facebookButton {
+    background: #212323 !important;
+}
+
+/* Poll option highlight */
+.poll label:hover {
+    background-color: #545656;
+}
+
+.secondColumn p, .secondColumn h3 {
+    color: #EDEEEE !important;
+}
+#poll, .poll {
+    color: #EDEEEE;
+    background: none !important;
+}
+.poll.jsenabled label:hover {
+    background: #18AE43 !important;
+}
+
+/* remove Newsletter subscription box */
+#newsletter {
+    display: none;
+}
+
+/* Highlighted Products (Het bekijken waard) */
+#highlightedProducts .description, #highlightedProducts .price {
+    color: #EDEEEE !important;
+}
+
+/* Uitgelichte User reviews */
+.frontpage #community .userReview .userReviewDescription, .userReview {
+    background: #454646 !important;
+    color: #EDEEEE;
+}
+
+/** Articles */
+.article, .content {
+    color: #EDEEEE !important;
+}
+.article h2 {
+    color: #B9133D;
+}
+.article h3 {
+    color: #FFFFFF !important;
+}
+/* Tables in articles */
+.article table {
+    background: #232525 !important;
+}
+
+/* Author information next to article */
+.authorBlock div.info {
+    background-color: inherit;
+}
+.relatedAuthor .authorInfo td {
+    color: #868686 !important;
+}
+
+/* Inhoudsopgave reviews */
+.tocContent {
+    background: #323434 !important;
+/*    width: 100% !important; */
+}
+
+/* Social buttons and Related Articles */
+#socialButtonsContainer, #contentArea .centeredContent .articleOptions #shareButtonContent {
+    display: none;
+}
+div.relatedContent {
+    display: none;
+}
+
+/* Next/Prev article date colour */
+table.nextPrevious tr td {
+    color: #B7B4B2 !important;
+}
+
+/* Modfilter text and width */
+.modFilter {
+    color: #B7B4B2 !important;
+}
+
+/* Meuk sidebar */
+.meukDetail .sidebar .section {
+    background: #323434 !important;
+    color: #EDEEEE !important;
+}
+table.meuklist {
+    color: #EDEEEE;
+}
+
+/** Comments */
+
+/* Modfilter 'ongemodereerd' to question mark */
+.modFilter .scoreButton.scorenone, .modFilter .scoreButton.wide {
+    word-spacing: -999px;
+    letter-spacing: -999px;
+    display: none;
+}
+.modFilter .scoreButton.scorenone:after, .modFilter .scoreButton.wide:after {
+    content: '?';
+    word-spacing: normal;
+    letter-spacing: normal;
+    background: linear-gradient(to bottom, #C8CBCB, #BEC1C1) #C8CBCB;
+    padding: 3px 3px;
+}
+
+/* Collapse buttons */
+#collapseButtons {
+    display: none;
+}
+
+/* Bar top of comment */
+.reactie .topBorder {
+    height: 0 !important;
+}
+.reactieBody {
+    background: #212323;
+}
+.reactie {
+    color: #EDEEEE;
+    border-left: 1px solid #545454;
+}
+/* +2 comments */
+.reactieBody.informative {
+    background: #323535 !important;
+    border: 1px solid #4D4F4F !important;
+}
+/* +3 comments */
+.reactieBody.spotlight {
+    background: #454747 !important;
+    border: 1px solid #6D6F6F !important;
+}
+/* Odd white line at last comment*/
+.reactie.last > .reactieContainer {
+    border-left: 1px solid #545454 !important;
+}
+/* Blockquote colour a bit lighter */
+.reactieContent blockquote {
+    color: #A9A9A9 !important;
+}
+
+/** Userreacties search */
+.searchTable {
+    background: #323434 !important;
+    width: 100% !important;
+}
+/** User tab V&A */
+div.pwLinks ul li, div.pwLinks ul li a {
+    color: #EDEEEE !important;
+}
+.pwLinks {
+    background: #323434 !important;
+}
+/* Wishlist */
+.tabContent .article table {
+    background: #2E2F2F !important;
+}
+div.inventory h3.title, div.inventory h3.titleShow {
+    color: #0067A2 !important;
+}
+
+/* User settings */
+.settingsContent {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** Gallery fotoalbum */
+form table td {
+    color: #FFFFFF !important;
+}
+#fotoalbum .sidebar {
+    background: #212323;
+}
+
+/** Tweakblog admin table */
+form table.tweakblog {
+    background: #2E2F2F !important;
+}
+
+/** Karmastore */
+.mainColumn table.itemList {
+    background: #2E2F2F !important;
+}
+
+/* Abbo page info */
+.aboShop .info {
+    background: inherit;
+}
+
+/* No social */
+#social, .social, #modernSocialButtonsContainer {
+    display: none !important;
+}
+/* Change text background below article
+   in case we do want to have the buttons */
+#toggleButtonTxt {
+    background: #212323 !important;
+}
+/* Do not show the buttons at all below the article */
+#socialButtons {
+    display: none !important;
+}
+/* Kill LOI block */
+div#loi {
+    display: none;
+}
+
+/** Pricewatch */
+#header h1 .subtitle {
+    color: #EDEEEE !important;
+}
+
+/* Product display list */
+/* White top bar */
+#top #entity, #top .pageTabsContainer {
+    background: #323434 !important;
+}
+#entity>div {
+    border-top: none !important;
+}
+
+/* Add to wishlist or inventaris */
+.popup_style .bar.header {
+    color: #EDEEEE;
+}
+.popup_style .collectionAddForm .extraLabel .primaryLabel {
+    color: gray;
+}
+
+/** Filters */
+/* Box below filters */
+.filterBlock {
+    background: inherit;
+}
+
+#categoryBrowser div, #categoryBrowser .sublist {
+    background: #323434 !important;
+    border: 1px solid #171818 !important;
+}
+#categoryBrowser .large li {
+    border-bottom: 1px solid #171818 !important;
+    border-right: 1px solid #171818 !important;
+}
+#categoryBrowser {
+    background: #282929 !important;
+    border: 1px solid #171818 !important;
+}
+
+.popularProductListing table.listing tr td, .popularProductListing table.listing tr td a, .articleColumn table.listing tr td, .articleColumn table.listing a {
+    background: #323434 !important;
+}
+#tweakbase {
+    margin-top: 51px;
+}
+.listOptions .pageIndex {
+    color: #EDEEEE;
+}
+.productCompare table.listing tr td, .productCompare table.listing tr td a, .productCompare table.listing th, .itemFilter table.listing tr td, .itemFilter table.listing tr td a, table.spec-detail tr.diff td {
+    background: #323434 !important;
+}
+.productCompare table.listing tr th.compare {
+    background-position: 14px 19px !important;
+}
+.productCompare table.listing tr td.compare {
+    background-position: 14px -1px !important;
+    border: none !important;
+}
+.productCompare table.listing .compare { 
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAABUAQMAAABnUf89AAAABlBMVEUAGAXDxsa+Z6rqAAAAAXRSTlMAQObYZgAAABZJREFUCFtjXMXAwMDA0DBAJFZBepEAjDwVLKcRyjUAAAAASUVORK5CYII=") no-repeat transparent !important;
+}
+
+table.listing th .listOptions .sortable.sortorder .dropdown li, table.listing th .listOptions .sortable.sortorder .dropdown li a {
+    color: #000000 !important;
+}
+
+.relatedBlock table.listing tr td, .relatedBlock table.listing a, .relatedBlock {
+    background: #2D2E2E !important;
+}
+.relevancyColumn .relationboxBlock .thumb a, .relatedBox .thumb a {
+    background: #484848 !important;
+    border: 1px solid #595959 !important;
+}
+/* Sort dropdown */
+div.sortable.sortorder ul li a {
+    color: #000000 !important;
+}
+
+/* Bestelkosten berekenen */
+/* Right column colour */
+#costTypeSelect, .costFilter {
+    background: none !important;
+}
+/* Article table */
+.priceTable tbody tr.even {
+    background: #454548 !important;
+}
+.priceTable tbody tr {
+    background: #343437 !important;
+}
+/* Shop table */
+table.shoppingCart tr.even td {
+    background: #454548 !important;
+    color: #EDEEEE !important;
+}
+table.shippingCart tr td {
+    background: #343437 !important;
+    color: #EDEEEE !important;
+}
+table.shoppingCart .pricelisthead td, table.shoppingCart .pricelist td {
+    color: #EDEEEE !important;
+}
+
+/* Specs */
+td.spec-column, table.spec-detail td.spec-group-name {
+    color: #EDEEEE !important;
+}
+table.spec-detail td.spec-index-column {
+    color: #838686 !important;
+}
+.specs .popularSpecs, .fixedLabels .specs .popularSpecs td.spec-label span {
+    background: #343232 !important;
+}
+.specs h3.bar {
+    background: #232121 !important;
+}
+.specs td.spec-label, .specs td.spec {
+    color: #EDEEEE !important;
+}
+#productSpecifications tbody tr:hover td, .fixedLabels #productSpecifications tbody tr:hover td.spec-label span, #productSpecifications tbody tr.diff:hover td {
+    background-color: #323282 !important;
+}
+
+/* Shop Review */
+.secondColumn {
+    float: right !important;
+}
+.rightInfoBlock {
+    background: none !important;
+}
+#reacties.shopSurvey .reactie {
+    border: 1px solid #DBDEDE;
+}
+
+/* User Review */
+.ScorecardView {
+    background-color: #232121 !important;
+    color: #EDEEEE;
+}
+/* Review tab has some black text colour */
+.articleColumn.userreview .userReviewPageInfo {
+    color: #EDEEEE;
+}
+
+/* Product comparison */
+#compareSpecsHeader.fixed .wrap {
+    background-color: #313232 !important;
+}
+/* Add product */
+#compareSpecsHeader table td.add a {
+    background: none;
+}
+#compareSpecs .addToCompareSearch .wrap {
+    background: #313232;
+}
+div#productSpecifications.specs.toggle tr th .bar {
+    background: #565656 !important;
+}
+
+/* Specs same */
+div#productSpecifications.specs.toggle tr td.spec, div#productSpecifications.specs.toggle tr td.spec-label {
+    color: #EDEEEE !important;
+}
+/* Specs differ */
+div.productSpecifications.specs.toggle tr.diff {
+    background: #545454 !important;
+    color: #EDEEEE !important;
+}
+div#productSpecifications.specs.toggle table.popularSpecs tr td.spec, div#productSpecifications.specs.toggle table.popularSpecs tr td.spec-label {
+    background: #545454 !important;
+}
+
+/* Downloads */
+.downloadDetails {
+    background: inherit;
+}
+
+/*******
+   GoT
+ *******/
+/* Breadcrumbs */
+.breadcrumb a, .action_list a {
+    color: #828585 !important;
+}
+.bulletSeparatedList > li:first-child::before { 
+    content: "" !important;
+}
+
+/** Forum tabs */
+#forum_tabs li a {
+    color: #ABAAAA !important;
+}
+#forum_tabs li.active a {
+    color: #FFFFFF !important;
+}
+
+/* Bookmarks */
+.faux p {
+    color: #FFFFFF !important;
+}
+
+/** Search results */
+table.forumlisting .preview .content {
+    background: #212323 !important;
+}
+table.forumlisting>tbody>tr>td {
+    background: #323434 !important;
+}
+/* Search filter */
+#filter, .filterOption.active {
+    background: #212323 !important;
+}
+.filterBlock h4, .filterOption h4 {
+    color: #EDEEEE !important;
+}
+.filterOption li, .filterOption label {
+    color: #919494 !important;
+}
+.filterOption label.selected {
+    color: #000000 !important;
+}
+
+/** Colourize headers */
+.channelHeader h2 {
+    color: #FFFFFF !important;
+}
+.thumb.category {
+    background: 50% 5px no-repeat !important;
+}
+.forumList:nth-child(2) table.listing th  {
+    background: #0044EE !important;
+}
+/* Computers */
+.forumList:nth-child(3) .channelHeader, .thumb.category.core {
+    background-color: #A30028 !important;
+}
+.thumb.category.core { 
+    background-image: url("https://tweakimg.net/g/if/categories/computers_x2.png") !important;
+}
+/* IT Pro */
+.forumList:nth-child(4) .channelHeader, .thumb.category.pro {
+    background-color: #400072 !important;
+}
+.thumb.category.pro { 
+    background-image: url("https://tweakimg.net/g/if/categories/itpro_x2.png") !important;
+}
+/* Games */
+.forumList:nth-child(5) .channelHeader, .thumb.category.games {
+    background-color: #0E8F1D !important;
+}
+.thumb.category.games { 
+    background-image: url("https://tweakimg.net/g/if/categories/games_x2.png") !important;
+}
+/* Beeld en Geluid */
+.forumList:nth-child(6) .channelHeader, .thumb.category.electronics {
+    background-color: #BD3500 !important;
+}
+.thumb.category.electronics { 
+    background-image: url("https://tweakimg.net/g/if/categories/electronics_x2.png") !important;
+}
+/* Tablets en Telefoons */
+.forumList:nth-child(7) .channelHeader, .thumb.category.mobile {
+    background-color: #04926C !important;
+}
+.thumb.category.mobile { 
+    background-image: url("https://tweakimg.net/g/if/categories/mobile_x2.png") !important;
+}
+/* General Chat */
+.forumList:nth-child(8) .channelHeader, .thumb.category.chat {
+    background-color: #8A33CC !important;
+}
+.thumb.category.chat { 
+    background-image: url("https://tweakimg.net/g/if/categories/chat_x2.png") !important;
+}
+/* Tweakers Feedback */
+.forumList:nth-child(9) .channelHeader, .thumb.category.feedback {
+    background-color: #A57D00 !important;
+}
+.thumb.category.feedback { 
+    background-image: url("https://tweakimg.net/g/if/categories/heart_x2.png") !important;
+}
+/* A51 */
+.forumList:nth-child(10) .channelHeader, .thumb.category.area51 {
+    background-color: #99FF00 !important;
+}
+.thumb.category.area51 { 
+    background-image: url("https://tweakimg.net/g/if/categories/alien_x2.png") !important;
+}
+
+/* Topic listing heading colour */
+table.listing th a {
+    color: #FEFEFE !important;
+}
+/* Border around image */
+.channelHeader .thumb {
+    border: none !important;
+}
+
+/** Listing borders */
+table.listing td {
+    border-top: 0px solid #000000 !important;
+    border-bottom: 1px solid #000000 !important;
+}
+table.listing td.last {
+    border-right: 1px solid #000000 !important;
+}
+table.listing td.ind, table.listing td.ind2 {
+    border-left: 1px solid #000000 !important;
+}
+/* Decrease space between forum sections */
+.forumList table.listing {
+    margin-bottom: 5px !important;
+}
+
+/** Forum Description */
+#title p.forumdesc {
+    color: #EDEEEE !important;
+}
+/** GoT Topic listings  */
+table.listing td, table.listing td a {
+    background: #121212 !important;
+    color: #EDEEEE !important;
+}
+table.listing td.topic a, table.listing td.title a { 
+    color: #EDEEEE !important;
+}
+/* Listing height */
+table.listing td, table.listing th {
+    padding: 4px 5px !important;
+}
+table.listing th {
+    background: #3E3E3E !important;
+}
+table.listing td.topic a[title="Laatste reactie geplaatst door Hero of Time"] {
+    font-style: italic;
+}
+
+/* Mijn Topics bar .find_topics.poster*/
+div.info {
+    background: #232121;
+    color: #edeeee;
+}
+
+/** Forum replies */
+/* Forum heading on top for working links */
+#forumheading { 
+    position: relative;
+    z-index: 1;
+}
+/* Viewcounter colour */
+.action_list li.viewcount {
+    color: gray;
+}
+
+#content #sidebar #tweakbase_relations {
+    margin: 0px 5px;
+}
+
+/* Message content */
+div.message, div.faq, form.form1, form.form2, #folders, #myprofilecontainer, table.info {
+    background: #212323 !important;
+    color: #EDEEEE !important;
+}
+#messages, .topic_actions {
+    padding-left: 5px !important;
+}
+div.message div.post div.messagecontent {
+    margin-right: 5px !important;
+}
+/* Hyperlinks in messages Tweakers green */
+div.messagecontent a {
+    color: #D9FF26 !important;
+}
+/* Members Only */
+.membersonly {
+    background: #00A000 !important;
+}
+div.membersonly a {
+    color: #000000 !important;
+}
+/* Hyperlinks in RML list */
+table.rml a {
+    color: #DDDD00 !important;
+}
+/* RML list background */
+table.rml td {
+    background: #505050 !important;
+}
+table.rml th {
+    background: #606060 !important;
+}
+/* Remove space between messages */
+div.message, div.faq {
+    margin-bottom: 0px !important;
+}
+
+/*** Zeef always green ***/
+div.message.admin[data-owner-id="2030"] div.poster.avatar div.userheader p.username.ellipsis a.user {
+    color: #00BB00 !important;
+}
+
+/* Make your own post more visible, now with gradient! */
+div.message.ownpost {
+    background-image: linear-gradient(#404040 10px, #212323 40px) !important;
+}
+/* Give the header of the TS a different colour */
+div.message.topicstarter {
+    background-image: linear-gradient(#323434 10px, #212323 40px) !important;
+}
+/* And the date a different colour */
+div.topicstarter div.messageheader div.date a {
+    color: #008800 !important;
+}
+/* Remove the badge while we're at at too */
+.labelCard.topicstarter {
+    display: none !important;
+}
+
+/* Add same bullet point before rating to increase spacing between 'Quote' and rating */
+.action_list li.rating .ratingcount::before {
+    content: '\2022' !important;
+    margin: 0 6px !important;
+    color: #828585 !important;
+}
+
+/* Change big thumb icon to smaller one that looks better */
+.action_list li.rating .ratingcount {
+    font-size: inherit;
+}
+.action_list li.rating .thumbsup.rated, .action_list li.rating.can_be_rated .thumbsup {
+    background: inherit;
+    background-image: inherit;
+    border: none;
+}
+.action_list li.rating .thumbsup {
+    width: 14px;
+    height: 14px;
+    vertical-align: initial;
+    top: 0;
+    position: inherit;
+    top: inherit;
+    background: none;
+    background-image: none;
+    border: none;
+    border-radius: initial;
+}
+.action_list li.rating .thumbsup:before {
+    background: url(https://static.tweakers.net/ext/f/N3fRBdthYAVi027KASIL2LG8/full.png) no-repeat -30px -269px;
+}
+.action_list li.rating .thumbsup.rated:before {
+    background-position: -45px -269px;
+}
+.action_list li.rating.can_be_rated .thumbsup:not(.rated):hover {
+    background: none;
+    background-image: none;
+    border: none;
+}
+.action_list li.rating .ratingcount {
+    min-width: initial;
+    color: #828585;
+}
+
+/* Question topic tip bar */
+.bar.tip {
+    background: #545454;
+}
+
+/* New Messages notification bar */
+#newMessageNotification {
+    background: #000000;
+}
+#newMessageNotification:hover {
+    background: #232121;
+}
+
+/* Some padding for the post */
+div.message div.post {
+    padding: 5px 2px 4px 10px !important;
+}
+/* Post version on diff */
+div.message div.poster {
+    color: #EDEEEE !important;
+}
+
+/** Quote boxes */
+div.messagecontent blockquote {
+    color: #FFFFFF !important;
+}
+div.message-quote-div {
+    background: #060606 !important;
+    color: #FFFFFF !important;
+}
+/* Disable quote folding */
+.messagecontent .message-quote-div.large-quote {
+    height: auto !important;
+    overflow: visible;
+    padding-bottom: 10px !important;
+}
+.messagecontent .toggle-quote {
+    display: none;
+}
+/* Quote user link */
+div.messagecontent div.message-quote-div a.messagelink, div.messagecontent div.message-quote-div a.messagelink:hover {
+    color: #FFFFFF !important;
+}
+
+/** Code boxes */
+table.phphighlight td.phphighlightline, table.phphighlight td.phphighlightcode {
+    border: 1px solid #FFFFFF !important;
+}
+table.phphighlight td, table.phphighlight td pre, table.phphighlight td code {
+    color: #000000 !important;
+    background: #DDDDDD !important;
+}
+
+/* Pre-box */
+div.pre pre {
+    background: #323434 !important;
+}
+
+/* /me tag */
+.me, div.messagecontent span.me a {
+    color: #00AA00 !important;
+}
+
+/* Modbreak text */
+.mbr {
+    color: #AD0009 !important;
+}
+
+/** Spoilers */
+/* Don't show URLs in spoilers until hovered or clicked */
+.spoiler, .messagecontent div.spoiler a, .messagecontent .message-quote-div div.spoiler a {
+    color: #000000;
+}
+
+.spoiler:hover, div.spoiler a:hover, .spoiler img:hover, .messagecontent div.spoiler a:hover, .messagecontent .message-quote-div div.spoiler a:hover, .spoiler>*:hover {
+    color: white !important;
+    visibility: visible !important;
+}
+
+/* lazy image loading */
+img.lazyimg {
+    background: #0a0a0a !important;
+}
+/* image broken */
+img.error {
+    background: #3f1111;
+}
+
+/** User info **/
+/* Ugly klipklap arrow */
+.userklipklap {
+    background: none !important;
+    border: none !important;
+}
+.userklipklap > div {
+    background: #202121 !important;
+}
+.userklipklap .online {
+    color: #63C000 !important;
+}
+/* Show user reg date and postcount */ 
+div.message div.post div.userdetails div.userdata div.extra { 
+    display: block !important;
+}
+
+/* Username */
+.user {
+    color: #FFFFFF !important;
+}
+
+/* Crew username*/
+.crew, .crew:visited {
+    color: #B9133C !important;
+}
+
+/* Pimp user, aka luser :+ */
+.pimp, a.pimp:hover, .pimp:visited {
+    color: #DE47DC !important;
+}
+
+/* Pagenumbers */
+.pagecounter {
+    margin: 5px 0px 0px !important;
+}
+
+/** Quick Reply */
+#reageer.bar {
+    background: #303030 !important;
+    border: 0px solid #D2D4D4 !important;
+    border-top: 1px solid #D2D4D4 !important;
+    border-left: 1px solid #D2D4D4 !important;
+    border-right: 1px solid #D2D4D4 !important;
+}
+/* Topicwarning */
+fieldset.modbreak {
+    background: #800000 !important;
+}
+fieldset.modbreak legend {
+    color: #FFE900 !important;
+}
+fieldset.modbreak a {
+    color: #09FF26 !important
+}
+.bar.warning {
+    background-color: #880000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Report post */
+form#message_form.insertMessage {
+    background: #232121 !important;
+}
+div.wrap div#content h3.bar {
+    background: #232121 !important;
+}
+textarea#messageBox.report {
+    background: #322121 !important;
+}
+
+/* Toon Voorbeeld - make it true visible button */
+form input.forumlink { 
+    cursor: pointer;
+    background: #0A93CA !important;
+    border: 1px solid #0987B8;
+    border-radius: 1px;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.102);
+    color: #FFFFFF !important;
+    font-size: 12px;
+    height: 26px;
+    padding: 0px 10px;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.149);
+}
+/* Reply dropdown for page selection */
+#footer div.buttonnav select, #quotemessages div.buttonnav select {
+    color: #EDEEEE !important;
+}
+/* Button toolbar */
+#toolbar img {
+    background: #FFFFFF;
+}
+
+/* Make sure Reageer has correct text colour */
+.fancyButton {
+    color: #FFFFFF !important;
+}
+
+/* New topic and topic page navigation buttons */
+.fancyButton.grey {
+    background: linear-gradient(to bottom, #0A93CA, #0A8ABD) #0A93CA !important;
+    border: 1px solid #0987B8 !important;
+}
+
+.fancyButton:hover { 
+    background: linear-gradient(to bottom, #0CA3D4, #0B98C5) #0CA3D4 !important;
+    border-bottom-color: #0B94BF !important;
+    border-left-color: #0B94BF !important;
+    border-right-color: #0B94BF !important;
+    border-top-color: #0B94BF !important;
+}
+
+.fancyButton:focus { 
+    box-shadow: 0px 0px 4px rgba(9, 135, 184, 0.749) !important;
+}
+a.fancyButton.grey.next {
+    color: #FFFFFF !important;
+}
+
+/* Topic nav */
+.pageDistribution .previous, .pageDistribution .next, .pageDistribution .last { 
+    background: no-repeat linear-gradient(to bottom, #0A93CA, #0A8ABD) #0A93CA !important;
+    border: 1px solid #0A88BA  !important;
+    height: 15px !important;
+    line-height: 15px !important;
+    color: #FFFFFF !important;
+}
+.pageDistribution .previous { 
+    background-image: url("https://tweakimg.net/g/prev_arrow.png") !important;
+    background-position: 5px 3px !important;
+}
+
+/* Relationeditor (Onderwerpen koppelen) */
+.relationManager dd ul.bulletSeparatedList, ul.bulletSeparatedList {
+    color: #EDEEEE !important;
+}
+#relationeditor table tr td {
+    background: #2F3131 !important;
+}
+#relationeditor h3 {
+    color: #327398 !important;
+}
+form.insertMessage.relationManager {
+    background: #232121 !important;
+}
+
+.relationeditor input[type=text] {
+    color: #EDEEEE !important;
+    background: #323131 !important;
+}
+
+.relationeditor .resultItem, .relationeditor .resultFooter, .relationeditor .resultItemSimple {
+    color: #EDEEEE !important;
+    background: #424141 !important;
+}
+.relationeditor .resultItem .title, .relationeditor .resultItemSimple .title, .relationeditor .resultItem .type, .relationeditor .resultItemSimple .type {
+    color: #EDEEEE !important;
+}
+
+/** Mod tools */
+/* Show diffs */
+div.diff address {
+    color: #000000;
+}
+div.diff pre {
+    background-color: #555555;
+}
+div.diff pre del, div.diff pre ins {
+    color: #000000;
+}
+
+
+/* Dropdowns */
+select {
+    background: #000000 !important;
+    color: #EDEEEE !important;
+}
+/* "Zut" */
+h3.inverted {
+    color: #FFFFFF !important;
+}
